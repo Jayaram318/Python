@@ -16,18 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Admissions.views import addadmission
-from Admissions.views import admissionreport
-from finance.views import fee
-from finance.views import dues
-from finance.views import financereport
+from django.conf.urls import include
+
 urlpatterns = [
+     
     path('admin/', admin.site.urls),
-    path('admission/', addadmission),
-    path('admissionreport/', admissionreport),
-    
-    path('fee/', fee),
-    path('dues/', dues),
-    path('financereport/', financereport),
-    
+    path('ad/', include('Admissions.urls')),
+    path('fin/', include('finance.urls'))
+
 ]
