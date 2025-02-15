@@ -16,10 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Admissions import views
+from Admissions import views as ad
+from finance import views as fin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('admission/', views.addadmission),
-    path('admissionreport/', views.addadmissionreport),
+    path('admission/', ad.addadmission),
+    path('admissionreport/', ad.admissionreport),
+    
+    path('fee/', fin.fee),
+    path('dues/', fin.dues),
+    path('financereport/', fin.financereport),
+    
 ]

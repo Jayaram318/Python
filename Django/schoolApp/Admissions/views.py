@@ -5,5 +5,5 @@ from django.http import HttpResponse
 # function based views
 def addadmission(request):
     return HttpResponse("<h1> This is the admission page </h1> <h2> welcome to the school </h2>")
-def addadmissionreport(request):
+def admissionreport(request):
     return HttpResponse("<h1> This is the report page </h1> <h2> welcome to the school </h2>")
