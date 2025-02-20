@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.topheader{
+    height: 4%;
+    background-color: grey;
+    padding-top: 7px;
+    color: white;
+}
+.header{
+    height:15%;
+  
+}
+.menubar{
+    height: 5%;
+    background-color: lightgray;
+}
+.body{
+    height: 65%;
+    border: 5px red;
+}
+.footer{
+    height: 15%;
+    background-color: black;
+}
